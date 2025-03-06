@@ -116,14 +116,6 @@ aB = aKC; % beta-lactamase production rate constant
 %%%%
 % aC = aC/5;
 
-% numerical stability check
-ns = max([DN, DA, DB, DK]) * dt / (dx^2);
-
-if ns > 0.25
-    fprintf(['Numerical stability is not guaranteed ( n_s = ' num2str(ns) ' ) ... \n'])
-    fprintf(['Choose an at least ' num2str(ns/0.25) ' smaller timestep (or maximum diffusion coefficient) ... \n'])
-end
-
 % Initialization
 P = zeros(nx, ny);      % Pattern
 C = zeros(nx, ny);      % Cell (P. aeruginosa) density
