@@ -20,7 +20,7 @@ resized_image = cv2.resize(gray_image, (400, 400))
 h, w = resized_image.shape[:2]
 
 # Step 2: Thresholding to create a binary image
-threshold = 60
+threshold = 52
 _, binary_image = cv2.threshold(resized_image, threshold, 255, cv2.THRESH_BINARY)
 
 # Step 3: Masking the central part of the image (for Petri dish isolation)
