@@ -132,7 +132,7 @@ r0 = 5;    % initial radius 5 default
 C0 = 0.05; %  default 1.6; min 0.05
 K0 = C0; %C0;
 % Cm = 100*C0; %1e0*Cm; %1*sCm;
-KC = 5e0; % local carrying capacity
+KC = 1; %5e0; % local carrying capacity
 
 nseeding = length(x0);
 rr = zeros(nx, ny, nseeding);
