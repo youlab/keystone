@@ -32,7 +32,7 @@ close all
 Pa48 = readmatrix("1Kp1Pa_d40mm_Pa_t48h.csv");
 Kp48 = readmatrix("1Kp1Pa_d40mm_Kp_t48h.csv");
 Pa48 = flipud(Pa48);
-Kp48 = flipud(Kp48)
+Kp48 = flipud(Kp48);
 
 Cell48 = Pa48 + Kp48;
 
