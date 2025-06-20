@@ -25,6 +25,8 @@ for ii=1:length(ConfigIDVec)
 
             Pa = readmatrix([condition '_Pa_t' num2str(Time) 'h.csv']);
             Kp = readmatrix([condition '_Kp_t' num2str(Time) 'h.csv']);
+            Pa = flipud(Pa);
+            Kp = flipud(Kp)
 
             Tot = Pa + Kp;
 
